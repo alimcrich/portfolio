@@ -1,0 +1,148 @@
+/** Universal styles **/
+body{
+    font-family: Work Sans;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "header"
+                      "main"
+                      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 50px;
+    margin: auto;
+}
+
+/** Header/Banner **/
+header{
+    grid-area: header;
+    background-color:darkgrey;
+    margin: 0;
+    overflow: hidden;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  header ul li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  header ul li a {
+    display: block;
+    line-height: 3rem;
+    padding: 1rem 2.7rem;
+    text-decoration: none;
+  }
+  header ul li:first-child {
+    margin-right: auto;
+  }
+  #logo {
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+    max-width: 100px;
+    height: auto;
+  }
+  header ul li a:hover {
+    background-color: blue;
+  }
+
+h1{
+    display: inline-block;
+}
+
+.button{
+    display: inline-block;
+    color: black;
+    background: transparent;
+    border: none !important;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.button:hover{
+    color: white;
+    background: transparent;
+    border: none !important;
+}
+
+.button:active {
+    color: white;
+    background: transparent;
+    border: none !important;
+}
+
+
+/** Main Section (Tiles for projects) **/
+
+section{
+    grid-area:main;
+}
+
+.tile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 200px;
+    width: 300px;
+}
+
+#secondary-content{
+    display: none;
+}
+
+/**.tile:hover #secondary-content {
+    display: block;
+}**/
+
+
+img{
+    max-width:80%;
+    padding-top: auto;
+    text-align:center;
+}
+
+h2{
+
+}
+
+
+a{
+    padding-top: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+/** Footer/Contact **/
+footer{
+    grid-area: footer;
+    background-color: darkgrey;
+    color: black;
+    margin: auto;
+    padding-top: 2%;
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+}
+
+/** Different screens **/
+
+@media only screen and (max-width: 500px) {
+    body {
+        grid-template-areas: "header"
+        "left"
+        "right"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 23rem auto 5rem;
+    }
+}
+
