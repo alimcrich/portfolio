@@ -17,7 +17,7 @@ body{
 /** Header/Banner **/
 header{
     grid-area: header;
-    background-color: rgb(46, 46, 46);
+    background-color:darkgrey;
     display: block;
     width: 100%;
     margin: 0 auto;
