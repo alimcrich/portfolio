@@ -84,7 +84,6 @@ section{
 
 .tile {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 3rem;
     text-align: center;
     background-color: #f1f1f1;
     height: 200px;
@@ -101,7 +100,7 @@ section{
 
 
 img{
-    max-width:80%;
+    max-width:100%;
     padding-top: auto;
     text-align:center;
 }
