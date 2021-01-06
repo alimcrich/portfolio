@@ -2,29 +2,55 @@
 
 <head>
     <link href="resources/css/tiles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <title>Ali Richomme</title>
 </head>
 
 <body>
     <!--Compact Banner-->
-    <img id='logo' src='./resources/AR_logo.png' alt="Ali Richomme logo. Your browser doesn't support this image." /><br>
-    <h1>Ali Richomme</h1>
-    <button id='about'>About</button><button id='work'>Work</button><button id='travel'>Travel</button>
-
+    <header>
+        <ul>
+            <li><img id='logo' src='./resources/AR_logo.png' alt="Ali Richomme logo. Your browser doesn't support this image." />
+            </li>
+            <li><a class='button' href='./about.html'>About</a>
+            </li>
+            <li><a class='button' href='./work.html'>Work</a>
+            </li>
+            <li><a class='button' href='./travel.html'>Travel</a>
+            </li>
+        </ul>
+    </header>
     <!--Projects-->
-    <h2>Work</h2>
-    <div class="tile">
-        <img id='tile-img' src='./resources/altair.jpg' alt="Altair Partners Limited. Your browser doesn't support this image"/>
-        <h3>Altair Partners Limited</h3>
-    </div>
-    <div class="tile">
-        <img id='tile-img' src='./resources/polecat.svg' alt="Polecat Intelligence. Your browser doesn't support this image"/>
-        <h3>Polecat Intelligence</h3>
-    </div>
-    <div class="tile">
-        <img id='tile-img' src='./resources/University_of_Bristol_logo.png' alt="University of Bristol. Your browser doesn't support this image"/>
-        <h3>University of Bristol</h3>
-    </div>
+    <section>
+        <h2>Work & Projects</h2>
+        <div class="tile">
+            <div id='primary-content'>
+                <img id='tile-img' src='./resources/altair.svg' alt="Altair Partners Limited. Your browser doesn't support this image"/>
+            </div>
+            <div id='secondary-content'>
+                <h2>Altair Partners Limited</h2>
+                <h3>Project Manager, Business Analyst, Full-stack Developer</h3>
+            </div>
+        </div>
+        <div class="tile">
+            <div id='primary-content'>
+                <img id='tile-img' src='./resources/polecat.svg' alt="Polecat Intelligence. Your browser doesn't support this image"/>
+            </div>
+            <div id='secondary-content'>
+                <h2>Polecat Intelligence</h2>
+                <h3>Data Scientist</h3>
+            </div>
+        </div>
+        <div class="tile">
+            <div id='primary-content'>
+                <img id='tile-img' src='./resources/University_of_Bristol_logo.png' alt="University of Bristol. Your browser doesn't support this image"/>
+            </div>
+            <div id='secondary-content'>
+                <h2>University of Bristol</h2>
+                <h3>Research Assistant, Teaching Assistant</h3>
+            </div>
+        </div>
+    </section>
     <!--
     <div class="tile">
         <img id='tile-img' src='./resources/volunteering.png' alt="Volunteering. Your browser doesn't support this image"/>
@@ -33,9 +59,10 @@
     -->
 
     <!--CV-->
-    <button id='cv'><a href="./resources/cv.pdf" download>Downlod CV</a></button>
+    <button id='cv'><a href="./resources/cv.pdf" download>Download CV</a></button>
 
     <!--Footer-->
+    <footer>
     <a id='Contact' href="mailto:alirichomme@gmail.com">Contact Ali</a>
-
+    </footer>
 </body>
