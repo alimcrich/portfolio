@@ -1,0 +1,107 @@
+/** Universal styles **/
+body{
+    font-family: Work Sans;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "header header"
+                      "left right"
+                      "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 50px;
+    margin: auto;
+}
+
+
+/** Header/Banner **/
+header{
+    grid-area: header;
+    background-color: rgb(46, 46, 46);
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index:0;
+    padding-bottom: 2rem;
+}
+
+#logo{
+    z-index: 2;
+    display:inline-block;
+    margin: 0;
+    border-width: 0;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    padding-top: 0rem;
+}
+
+button{
+    color: black;
+    background: transparent;
+    border: none !important;
+    font-size: 20px;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+/** Main Section (Bio & Image) **/
+
+
+.left{
+    max-width: 500px;
+    height: auto;
+    width: 90%;
+    grid-area: left;
+    background-color: white;
+    margin: auto auto auto auto;
+}
+
+#ali{
+    max-width: 100%;
+    height: auto;
+    text-align:center;
+}
+
+.right{
+    
+    max-width: 500px;
+    height: auto;
+    width: 90%;
+    grid-area: right;
+    background-color: white;
+    margin: auto auto auto auto;
+    overflow: scroll;
+}
+
+.right h2{
+    text-align: center;
+}
+
+.right p{
+    text-align: justify;
+}
+
+/** Footer/Contact **/
+footer{
+    grid-area: footer;
+    background-color: pink;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        grid-template-areas: "header"
+        "left"
+        "right"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 23rem auto 5rem;
+    }
+}
